@@ -1,2 +1,2 @@
 # OhjelmistoPrototyyppiPeli
-Ohjelmiston Prototyypin Toteuttaminen github repo
+Ohjelmiston Prototyypin Toteuttaminen GitHub repo 🗿
