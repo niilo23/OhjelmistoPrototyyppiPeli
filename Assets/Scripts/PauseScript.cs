@@ -39,22 +39,17 @@ public class PauseScript : MonoBehaviour
         if (gameIsPaused)
         {
             Time.timeScale = 0f;
-            pauseCanvas.enabled = true;
+            //pauseCanvas.enabled = true;
             AudioListener.pause = true;
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            //Cursor.lockState = CursorLockMode.None;
+            //Cursor.visible = true;
 
-            GameObject.Find("Glock").GetComponent<GunScript>().enabled = false;
         }
         else
         {
             Time.timeScale = 1;
-            pauseCanvas.enabled = false;
+            //pauseCanvas.enabled = false;
             AudioListener.pause = false;
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-
-            GameObject.Find("Glock").GetComponent<GunScript>().enabled = true;
         }
     }
 }
