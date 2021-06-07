@@ -44,7 +44,7 @@ public class PauseScript : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
 
-            GameObject.Find("Glock").GetComponent<GunScript>().enabled = false;
+            GameObject.Find("Glock").GetComponent<shooting>().enabled = false;
         }
         else
         {
@@ -54,7 +54,7 @@ public class PauseScript : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
 
-            GameObject.Find("Glock").GetComponent<GunScript>().enabled = true;
+            GameObject.Find("Glock").GetComponent<shooting>().enabled = true;
         }
     }
 }
