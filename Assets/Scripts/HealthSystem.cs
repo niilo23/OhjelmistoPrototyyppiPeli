@@ -37,6 +37,6 @@ public class HealthSystem : MonoBehaviour
 
     public void OnDeath()
     {
-        GameObject.Destroy(this);
+        GameObject.Destroy(this.gameObject);
     }
 }
