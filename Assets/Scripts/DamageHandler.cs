@@ -6,9 +6,10 @@ public class DamageHandler : MonoBehaviour
 {
     public int damg = -20;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter(Collision collision)
     {
         collision.gameObject.GetComponent<HealthSystem>().TakeDmg(damg);
         Debug.Log("Damage Taken");
+    
     }
 }
